@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: serif, sans-serif;
+   
+    
+}
+
+header {
+background-color:#FFFFFF;
+
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size:larger;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    background-color: beige;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+   margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+.nav-links {
+   display:flex
+
+}
+
+.nav-links li {
+   
+    list-style: none;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.nav-links a  {
+    text-decoration: none;
+    margin-left: 12px;
+    margin-right: 12px;
+
+
+    
+}
+
+
+.logo img {
+    border-radius: 50%;
+    width: 80px;
+}
+
+.center-conter {
+    text-align: center;
+    font-size: 25px;
+    font-weight:700;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    text-shadow: 5px 5px 18px rgba(56, 0, 1, 0.4);
+    color: #380001;
+
+
+}
+
+
+  
+.center-conter img {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 25px;
+
+}
+
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F5F5DC;
+    padding: 20px;
+    margin: 0 auto;
+    flex-direction: row-reverse;
+    
+}
+
+.about-section-informacao {
+ flex: 1;
+ margin-right: 20px;
+    
+}
+
+.about-section img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border-style: ridge;
+    border-width: 3px;
+    border-color: rgb(191, 140, 204);
+   
+    border-radius: 50%;
+
+    
+}
+
+.about-section h2 {
+   margin-bottom: 25px;
+   font-size: 22px;
+   text-transform: uppercase;
+   font-weight: 600;
+   letter-spacing: 1px;
+   
+   text-align: center;
+   
+
+  }
+
+  .about-section p {
+    text-align:center;
+    margin: 5px;
+    font-size: 19px;
+    
+  }
+  

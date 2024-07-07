@@ -4,38 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu Portafolio</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
-      <nav>
-        <div>
+      <nav class="navbar">
+        <div class="logo">
           <a href="#home">
             <img src="/img/& logosol.png" width="100px" alt="minhaImagem" />
           </a>
         </div>
-        <ul>
+        <div class="container"> 
+        <ul class="nav-links">
           <li><a href="#home">Inicio</a></li>
           <li><a href="#about">Sobre</a></li>
           <li><a href="#projets">Projetos</a></li>
           <li><a href="#contact">Contato</a></li>
         </ul>
       </nav>
+    </div>
     </header>
 
     <main>
-      <section id="home">
+      <section id="home" class="center-conter">
         <h1>Bem-vindo ao Meu Portafólio</h1>
         <p>Tecnologia para um Progresso e Crecimento</p>
-        <img src="/img/tecnologia.PNG" alt="" />
+        <img src="/img/tecnologia.PNG" alt="" class="float-img"/>
       </section>
 
-      <section id="about">
-        <h2>Sobre de Mim</h2>
-        <img src="/img/mifoto.jpg" alt="imagem" />
-        <p>
-          Olá meu nome é Solangelis estou aprendendo desenvolvimento web. Estou
-          empolgada por criar e aprender novas tecnologias
-        </p>
+      <section id="about" class="about-section">
+        <div class="about-section-informacao">
+          <h2>Olá, eu sou Solangelis</h2>
+    <p>Sou estrangeira da Venezuela e estou morando no Brasil há 5 anos. Cheguei aqui junto com minha família em busca de melhores oportunidades.</p>
+    <p>Sou mãe de 3 lindas meninas. Também sou esposa e filha.</p>
+    <p>Estou cheia de sonhos e esperanças e acredito que com a tecnologia posso alcançar tudo o que me proponha. Espero crescer muito e adquirir a experiência necessária para obter um emprego estável, ajudar outras pessoas e, ao mesmo tempo, ajudar-me a mim mesma.</p>
+        </div>
+        
+        <img src="/img/perfil2.png" alt="imagem" />
+        
       </section>
 
       <section id="projets">
