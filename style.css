@@ -11,6 +11,7 @@ html, body {
 
 body {
     font-family: serif, sans-serif;
+    
    
     
 }
@@ -142,3 +143,156 @@ background-color:#FFFFFF;
     
   }
   
+
+  /* style carrusel   */
+
+
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .carousel input[type="radio"] {
+    display: none;
+  }
+  
+  .carousel-items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .carousel-controls {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .carousel-controls label {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(191, 140, 204);
+    cursor: pointer;
+  }
+  
+  #carousel-1:checked ~ .carousel-items {
+    transform: translateX(0%);
+  }
+  
+  #carousel-2:checked ~ .carousel-items {
+    transform: translateX(-100%);
+  }
+  
+  #carousel-3:checked ~ .carousel-items {
+    transform: translateX(-200%);
+  }
+
+  #contact {
+    background-color: #ffffff;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #contact h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  #contact form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #contact label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact textarea {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  #contact textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  #contact input[type="submit"] {
+    padding: 0.75rem;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #contact input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer ul li {
+    margin: 0 1rem;
+  }
+  
+  footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  footer ul li a:hover {
+    text-decoration: underline;
+  }

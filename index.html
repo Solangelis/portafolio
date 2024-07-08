@@ -1,135 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu Portafolio</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo">
-          <a href="#home">
-            <img src="/img/& logosol.png" width="100px" alt="minhaImagem" />
-          </a>
-        </div>
-        <div class="container"> 
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Portafolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#home">
+          <img src="/img/& logosol.png" width="100px" alt="minhaImagem" />
+        </a>
+      </div>
+      <div class="container">
         <ul class="nav-links">
           <li><a href="#home">Inicio</a></li>
           <li><a href="#about">Sobre</a></li>
           <li><a href="#projets">Projetos</a></li>
           <li><a href="#contact">Contato</a></li>
         </ul>
-      </nav>
+    </nav>
     </div>
-    </header>
+  </header>
 
-    <main>
-      <section id="home" class="center-conter">
-        <h1>Bem-vindo ao Meu Portafólio</h1>
-        <p>Tecnologia para um Progresso e Crecimento</p>
-        <img src="/img/tecnologia.PNG" alt="" class="float-img"/>
-      </section>
+  <main>
+    <section id="home" class="center-conter">
+      <h1>Bem-vindo ao Meu Portafólio</h1>
+      <p>Tecnologia para um Progresso e Crecimento</p>
+      <img src="/img/yo.jpg" alt="" class="float-img" />
+    </section>
 
-      <section id="about" class="about-section">
-        <div class="about-section-informacao">
-          <h2>Olá, eu sou Solangelis</h2>
-    <p>Sou estrangeira da Venezuela e estou morando no Brasil há 5 anos. Cheguei aqui junto com minha família em busca de melhores oportunidades.</p>
-    <p>Sou mãe de 3 lindas meninas. Também sou esposa e filha.</p>
-    <p>Estou cheia de sonhos e esperanças e acredito que com a tecnologia posso alcançar tudo o que me proponha. Espero crescer muito e adquirir a experiência necessária para obter um emprego estável, ajudar outras pessoas e, ao mesmo tempo, ajudar-me a mim mesma.</p>
+    <section id="about" class="about-section">
+      <div class="about-section-informacao">
+        <h2>Olá, eu sou Solangelis</h2>
+        <p>Sou estrangeira da Venezuela e estou morando no Brasil há 5 anos. Cheguei aqui junto com minha família em
+          busca de melhores oportunidades.</p>
+        <p>Sou mãe de 3 lindas meninas. Também sou esposa e filha.</p>
+        <p>Estou cheia de sonhos e esperanças e acredito que com a tecnologia posso alcançar tudo o que me proponha.
+          Espero crescer muito e adquirir a experiência necessária para obter um emprego estável, ajudar outras pessoas
+          e, ao mesmo tempo, ajudar-me a mim mesma.</p>
+      </div>
+
+      <img src="/img/perfil2.png" alt="imagem" />
+
+    </section>
+
+    <section id="projets">
+      <h2>Projetos</h2>
+      <div class="carousel">
+        <input type="radio" name="carousel" id="carousel-1" checked>
+        <input type="radio" name="carousel" id="carousel-2">
+        <input type="radio" name="carousel" id="carousel-3">
+
+        <div class="carousel-items">
+          <div class="carousel-item" id="item-1">
+            <h3>Projeto 1</h3>
+            <p>
+              Recriar Netflix.
+            </p>
+            <img src="/img/projeto1.PNG" alt="imagem do projeto 1">
+            <a href="https://github.com/Solangelis/recriando-a-interface-do-netflix.git" target="_blank"
+              rel="noopener noreferrer">Ver mais</a>
+          </div>
+          <div class="carousel-item" id="item-2">
+            <h3>Projeto 2</h3>
+            <p>
+              Este projeto consiste em recriar a interface de usuário Dio
+              utilizando React. O objetivo é criar uma aplicação web moderna e
+              responsiva, com navegação intuitiva e visualmente atraente.
+            </p>
+            <img src="/img/projeto2.PNG" alt="imagem do projet 2">
+            <a href="https://github.com/Solangelis/pagina-dio.git" target="_blank" rel="noopener noreferrer">Ver
+              mais</a>
+          </div>
+          <div class="carousel-item" id="item-3">
+            <h3>Projeto 3</h3>
+            <p>Este projeto é um pequeno mini-portafolio</p>
+            <img src="/img/projeo3.PNG" alt="imagem do projeto 3">
+            <a href="https://github.com/Solangelis/mini-portafolio.git" target="_blank" rel="noopener noreferrer">Ver
+              mais</a>
+          </div>
         </div>
-        
-        <img src="/img/perfil2.png" alt="imagem" />
-        
-      </section>
 
-      <section id="projets">
-        <h2>Projetos</h2>
-        <article>
-          <h3>Projeto 1</h3>
-          <p>
-            Este projeto consiste em recriar a interface de usuário de uma
-            plataforma de streaming similar à Netflix. A interface foi projetada
-            para ser intuitiva e visualmente atraente, permitindo aos usuários
-            explorar, buscar e visualizar conteúdo multimídia de forma simples e
-            eficiente.
-          </p>
-          <img src="/img/projeto1.PNG" alt="imagem do projeto 1" />
-          <a
-            href="https://github.com/Solangelis/recriando-a-interface-do-netflix.git"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Ver mais</a
-          >
-        </article>
+        <div class="carousel-controls">
+          <label for="carousel-1"></label>
+          <label for="carousel-2"></label>
+          <label for="carousel-3"></label>
+        </div>
+      </div>
+    </section>
 
-        <article>
-          <h3>Projeto 2</h3>
-          <p>
-            Este projeto consiste em recriar a interface de usuário Dio
-            utilizando React. O objetivo é criar uma aplicação web moderna e
-            responsiva, com navegação intuitiva e visualmente atraente.
-          </p>
-          <img src="/img/projeto2.PNG" alt="imagem do projet 2" />
-          <a
-            href="https://github.com/Solangelis/pagina-dio.git"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Ver mais</a
-          >
-        </article>
+    <section id="contact">
+      <h2>Contato</h2>
+      <form action="" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required />
 
-        <article>
-          <h3>Projeto 3</h3>
-          <p>Este projeto é um pequeno mini-portafolio</p>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
 
-          <a
-            href="https://github.com/Solangelis/mini-portafolio.git"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Ver mais</a
-          >
-        </article>
-      </section>
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" required></textarea>
 
-      <section id="contact">
-        <h2>Contato</h2>
-        <form action="" method="post">
-          <label for="name">Nome:</label>
-          <input type="text" id="name" name="name" required />
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+  </main>
 
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" required />
+  <footer>
+    <p>&copy; 2024 Solangelis</p>
+    <ul>
+      <li>
+        <a href="https://github.com/Solangelis" target="_blank" rel="noopener noreferrer">Git Hub</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/solangelishernandezgonzalez/" target="_blank"
+          rel="noopener noreferrer">Linkedin</a>
+      </li>
+    </ul>
+  </footer>
+</body>
 
-          <label for="message">Mensagem:</label>
-          <textarea id="message" name="message" required></textarea>
-
-          <input type="submit" value="Enviar" />
-        </form>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2024 Solangelis</p>
-      <ul>
-        <li>
-          <a
-            href="https://github.com/Solangelis"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Git Hub</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/solangelishernandezgonzalez/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Linkedin</a
-          >
-        </li>
-      </ul>
-    </footer>
-  </body>
 </html>
