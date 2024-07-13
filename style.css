@@ -147,6 +147,11 @@ background-color:#FFFFFF;
   /* style carrusel   */
 
 
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
   .carousel {
     display: flex;
     flex-direction: column;
@@ -296,3 +301,62 @@ background-color:#FFFFFF;
   footer ul li a:hover {
     text-decoration: underline;
   }
+
+ 
+ 
+
+
+
+@media (max-width: 768px){
+  .navbar{
+    flex-direction: column;
+    text-align: center;
+  }
+    
+    .nav-links {
+      flex-direction: column;
+       margin: 0;
+  
+    }
+  
+  
+    .nav-links li {
+      margin: 14px 0;
+    }
+  
+    .about-section {
+      flex-direction: column;
+      text-align: center;
+      
+      }
+      
+      
+      
+      .about-section-informacao {
+      margin-bottom: 20px;
+      margin-right: 0;
+      
+      }
+  
+      
+      .carousel {
+        max-width: 100%;
+      }
+  
+  
+  .about-section {
+  flex-direction: column;
+  text-align: center;
+  
+  }
+  
+  
+  
+  .about-section-informacao {
+  margin-bottom: 20px;
+  margin-right: 0;
+  
+  }
+}
+
+  
