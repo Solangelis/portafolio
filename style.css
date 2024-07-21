@@ -130,10 +130,7 @@ background-color:#FFFFFF;
    text-transform: uppercase;
    font-weight: 600;
    letter-spacing: 1px;
-   
    text-align: center;
-   
-
   }
 
   .about-section p {
@@ -153,62 +150,50 @@ background-color:#FFFFFF;
   }
 
   .carousel {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+   position: relative;
+   width: 100%;
     max-width: 800px;
     margin: 0 auto;
     overflow: hidden;
   }
 
-  .carousel input[type="radio"] {
-    display: none;
-  }
+ 
   
   .carousel-items {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease;
   }
   
   .carousel-item {
-    flex: 0 0 100%;
+    display: none;
+    transition: transform 0.5 ease;
+    width: 100%;
+    box-sizing: border-box;
     padding: 1rem;
     text-align: center;
   }
   
+
+  .carousel-item.active {
+    display: block;
+    transform: translateX(0);
+}
   .carousel-item img {
     max-width: 100%;
     height: auto;
-    display: block;
     margin: 0 auto;
   }
-  
-  .carousel-controls {
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-    margin-top: 1rem;
-  }
-  
-  .carousel-controls label {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: rgb(191, 140, 204);
-    cursor: pointer;
-  }
-  
-  #carousel-1:checked ~ .carousel-items {
-    transform: translateX(0%);
-  }
-  
-  #carousel-2:checked ~ .carousel-items {
-    transform: translateX(-100%);
-  }
-  
-  #carousel-3:checked ~ .carousel-items {
-    transform: translateX(-200%);
-  }
+
+
+ .carousel button{
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+ }
+
+ 
 
   #contact {
     background-color: #ffffff;

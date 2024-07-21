@@ -52,10 +52,6 @@
     <section id="projets">
       <h2>Projetos</h2>
       <div class="carousel">
-        <input type="radio" name="carousel" id="carousel-1" checked>
-        <input type="radio" name="carousel" id="carousel-2">
-        <input type="radio" name="carousel" id="carousel-3">
-
         <div class="carousel-items">
           <div class="carousel-item" id="item-1">
             <h3>Projeto 1</h3>
@@ -86,17 +82,14 @@
           </div>
         </div>
 
-        <div class="carousel-controls">
-          <label for="carousel-1"></label>
-          <label for="carousel-2"></label>
-          <label for="carousel-3"></label>
-        </div>
-      </div>
+      <button class="prev">Anterior</button>
+      <button class="next">Proximo</button>
     </section>
 
     <section id="contact">
       <h2>Contato</h2>
-      <form action="" method="post">
+      <form id="contactForm" action="" method="post">
+        
         <label for="name">Nome:</label>
         <input type="text" id="name" name="name" required />
 
@@ -123,6 +116,7 @@
       </li>
     </ul>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
