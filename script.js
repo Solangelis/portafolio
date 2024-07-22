@@ -129,7 +129,7 @@ if (emailInput === '') {
   if (messageInput === '') {
     showError(document.getElementById('message'), 'A mensagem é obrigatória.');
     isValid = false;
-  } else if (!checkLength(messageInput, 10, 300)) {
+  } else if (!checklength(messageInput, 10, 300)) {
     showError(document.getElementById('message'), 'A mensagem deve ter entre 10 e 300 caracteres.');
     isValid = false;
   }
