@@ -216,6 +216,8 @@ background-color:#FFFFFF;
   #contact form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    
   }
   
   #contact label {
@@ -253,7 +255,50 @@ background-color:#FFFFFF;
   #contact input[type="submit"]:hover {
     background-color: #0056b3;
   }
+
+
+  .form-control {
+    margin-bottom: 20px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
   
+  
+  form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+ 
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  
+  /* Estilo para o botão de envio */
+  input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Estilo para o botão de envio ao passar o mouse */
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
   
   footer {
     background-color: #333;
@@ -291,6 +336,9 @@ background-color:#FFFFFF;
  
 
 
+
+
+  
 
 @media (max-width: 768px){
   .navbar{
