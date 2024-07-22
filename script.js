@@ -138,7 +138,7 @@ if (emailInput === '') {
 if (isValid) {
     alert('Formulario enviado com sucesso')
 
-contactForm.onsubmit();
+contactForm.submit();
 }
 
 });
